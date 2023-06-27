@@ -1,5 +1,6 @@
 const assertArraysEqual = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
+    console.log(`Both the provided arrays are not equal.`);
     return false;
   }
   for (let i = 0; i < arr1.length; i++) {
