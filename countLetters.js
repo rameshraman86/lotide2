@@ -6,15 +6,16 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
 const countLetters = function(sentence) {
   let result = {};
-  let trimmedSentence = sentence.split(' ').join('');
-  console.log(trimmedSentence);
 
-  for(let char of trimmedSentence) {
+  if (typeof (sentence) !== 'string') {
+    return 'Invalid input';
+  }
 
-    if(result[char]){
+  let formattedSentence = sentence.split(' ').join('');
+  for (let char of formattedSentence) {
+    if (result[char]) {
       result[char] += 1;
     } else {
       result[char] = 1;
@@ -24,3 +25,5 @@ const countLetters = function(sentence) {
 };
 
 console.log(countLetters("lighthouse in the house"));
+console.log(countLetters(22));
+console.log(countLetters([22]));
