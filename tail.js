@@ -11,7 +11,7 @@ const tail = function(arr) {
     let tailOfArray = arr.slice(1);
     return tailOfArray;
   }
-  if (arr.length === 0) {
+  if (!arr.length) {
     return arr;
   }
 };
