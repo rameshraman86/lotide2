@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😀Assertion Passed`);
-  } else {
-    console.log(`🥵Assertion Failed`);
-  }
-};
-
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -20,13 +12,12 @@ const eqArrays = function(arr1, arr2) {
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`Both the provided arrays are equal.`);
+    console.log(`✅✅✅ Pass. Both arrays are equal.`);
     return true;
   }
-  console.log(`Both the provided arrays are not equal.`);
+  console.log(`🛑🛑🛑 Failed: Both arrays are not equal.`);
   return false;
 };
-
 
 const flatten = function(arr) {
   let flattendedArray = [];
@@ -53,3 +44,6 @@ const flattenRecursive = function(arr, flattendedArray = []) {
   }
   return flattendedArray;
 };
+
+// console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
