@@ -45,5 +45,4 @@ const flattenRecursive = function(arr, flattendedArray = []) {
   return flattendedArray;
 };
 
-// console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flattenRecursive([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
