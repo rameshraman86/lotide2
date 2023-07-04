@@ -1,5 +1,4 @@
-const assertEqual = require('./assertEqual');
-
+//program to return everything except for first element of array
 const tail = function(arr) {
   if (Array.isArray(arr)) {
     let tailOfArray = arr.slice(1);
@@ -10,6 +9,4 @@ const tail = function(arr) {
   }
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+module.exports = tail;
