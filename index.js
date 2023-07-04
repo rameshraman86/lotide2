@@ -7,7 +7,7 @@ const eqArrays = require('./eqArrays');
 const assertEqual = require('./assertEqual');
 const assertArraysEqual = require('./assertArraysEqual');
 const eqObjects = require('./eqObjects');
-
+const letterPositions = require('./letterPositions');
 
 module.exports = {
   head,
@@ -17,5 +17,6 @@ module.exports = {
   assertArraysEqual,
   assertEqual,
   eqObjects,
-  flattenRecursive
+  flattenRecursive,
+  letterPositions
 };

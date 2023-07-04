@@ -1,5 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
 const middle = function(array) {
   const arrayLength = array.length;
   const arrayMidIndex = Math.floor((arrayLength - 1) / 2);
