@@ -1,7 +1,7 @@
 {
-  "name": "lotide2",
+  "name": "@rameshraman86/lotide2",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library for lighthouselabs coursework",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/rameshraman86/lotide2.git"
   },
-  "author": "",
+  "author": "Ramesh Raman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rameshraman86/lotide2/issues"
